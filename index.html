@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Invaders</title>
+    <title>Intro</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <main>
     
+    <!-- #game-intro is initially shown on the game start screen -->
 
-
-
-
+    <div id="game-intro">
+      <img src="./images/SpaceInvadersLogo.png" alt="" class="logo-img" />
+      <br />
+      <img id="insert-coin" src="./images/insert_coin.gif" width="300pxpx" alt="insert-coin" onclick="btnClick()">
     
+    <audio id="backgroundMusic" src="./sound/intro-song.mp3" loop autoplay></audio>
+
+
+  </main>
     <script src="./js/app.js"></script>
 </body>
 </html>

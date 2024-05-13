@@ -1,0 +1,32 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(../images/space-background.png);
+    animation: slide 10s linear infinite;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 98vw;
+}
+
+@keyframes slide {
+    0% {
+      background-position: 0 -1000px;
+    }
+    95% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 50px;
+    }
+  }
+
+#game-container{
+    margin: 50px 50px;
+}
+
+#game-screen{
+    text-align: center;
+}
+
+ #game-end {
+    display: none;
+  }

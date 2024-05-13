@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    margin: 0px;
+    width: 98vw;
+    height: 80vh;
+    background-image: url(../images/intro_background.png);
+    background-repeat: repeat;
+    background-size: cover;
+    object-position: center;
+    text-align: center;
+  }
+
+/* Intro Game */
+  .logo-img {
+    width: 350px;
+    margin-bottom:230px; 
+  }
+
+#insert-coin{
+    cursor: pointer;
+}
