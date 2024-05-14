@@ -20,7 +20,9 @@ body {
     cursor: pointer;
 }
 
-
+#clock {
+color: white
+}
 #game-container {
   display: none;
 }

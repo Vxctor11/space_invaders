@@ -11,7 +11,7 @@ class Game {
         this.clockContainer = document.getElementById("clock-container");
         this.clock = document.getElementById("clock");
         this.endMessage = document.getElementById("end-message");
-        this.player = new Player(this.gameScreen, 215, 450, 66, 150, '../images/ship.png')
+        this.player = new Player(this.gameScreen, 685, 800, 70, 70, '../images/ship.png')
         this.height = 98
         this.width = 98
         this.obstacles = []
@@ -22,6 +22,7 @@ class Game {
         this.gameIntervalId = null
         this.gameLoopFrequency = 1000 / 60
         this.frames = 0
+        
 
     }
 
@@ -29,14 +30,16 @@ class Game {
         this.startScreen.style.display = 'none'
         this.startScreen.style.padding = 0
         this.startScreen.style.height = 0
+        document.body.style.backgroundImage = "url('./images/space-background.png')"
 
-        this.gameScreen.style.height = `${this.height}%`
-        this.gameScreen.style.width = `${this.width}%`
+        // this.gameScreen.style.height = `${this.height}%`
+        // this.gameScreen.style.width = `${this.width}%`
         this.gameScreen.style.display = 'block'
         
         this.gameContainer.style.height = `${this.height}vh`
         this.gameContainer.style.width = `${this.width}vw`
         this.gameContainer.style.display = 'block'
+        this.gameScreen.appendChild(this.clockContainer);
 
 
 
@@ -116,6 +119,7 @@ class Game {
         this.gameScreen.style.height = `${0}px`;
         this.gameScreen.style.width = `${0}px`;
         this.gameScreen.style.display = "none";
+        this.gameContainer.style.display = "none"
         console.log("Game end screen", this.stats);
         // this.stats.style.display = "none";
         // this.clockContainer.style.display = "none";
