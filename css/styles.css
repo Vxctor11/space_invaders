@@ -19,3 +19,14 @@ body {
 #insert-coin{
     cursor: pointer;
 }
+
+
+#game-container {
+  display: none;
+}
+#game-screen {
+  display: none;
+}
+#game-end {
+  display: none;
+}

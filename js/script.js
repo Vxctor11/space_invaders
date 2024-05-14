@@ -1,8 +1,15 @@
+const gameIntro = document.querySelector("#game-intro")
+const gameStart = document.querySelector("#game-intro")
+const gameEnd = document.querySelector("#game-intro")
+const restartButton = document.getElementById("restart-button");
+const audioIntro = document.getElementById('backgroundMusic')
+const insertCoinBtn =  document.getElementById('insert-coin')
+let game
 window.onload = function () {
-    const startButton = document.getElementById("start-button");
-    const restartButton = document.getElementById("restart-button");
-  
-    let game
+    audioIntro.play();
+    audioIntro.volume = 0.1;
+
+   
   
     function startGame() {
       
@@ -51,10 +58,15 @@ window.onload = function () {
   
     }
   
-    startButton.addEventListener("click", () => {
-      startGame();
-    });
-  
+    
+   insertCoinBtn.addEventListener('click', () => {
+      let audioInsertCoin = new Audio('./sound/Arcade_INSERT_COIN.mp3')
+      audioInsertCoin.play();
+      audioInsertCoin.volume = 0.2;
+      startGame()
+     
+  })
+
     restartButton.addEventListener("click", () => {
       restartGame();
     });
